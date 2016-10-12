@@ -1,1 +1,1 @@
-# coding: utf-8a = 10b = 20c = a + bprint(c)
+# coding: utf-8a = 4b = 20c = a + bprint(c)# name = 'Lancer'name = input('What is your name?')print('Hello ', name, ' I`m Python!')
