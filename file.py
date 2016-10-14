@@ -1,10 +1,12 @@
-filename = 'none.txt'
+filename = input('Введите имя файла который хотите забэкапить: ')
 
-file = open(filename, 'r', -1, 'utf-8')
+file = open(filename, 'rb')
 newFileName = '_backup_' + file.name
-newFile = open(newFileName, 'w', -1, 'utf-8')
+newFile = open(newFileName, 'wb')
 
-print(newFile.write(file.read()))
+print('файл "' + filename + '"' + ' успешно скопирован!')
+print('новое имя файла - ' + newFileName)
+print(str(newFile.write(file.read())) + ' байт скопировано')
 
 file.close()
 newFile.close()
